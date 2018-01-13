@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button1"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content"
+            android:onClick="onLigarClick"
+            android:text="@string/ligar" />
+
+        <Button
+            android:id="@+id/button2"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onProcurarClick"
+            android:text="@string/procurar" />
+
+        <Button
+            android:id="@+id/button3"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onAbrirClick"
+            android:text="@string/abrir" />
+
+        <Button
+            android:id="@+id/button8"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSairClick"
+            android:text="@string/sair" />
+
+        <Button
+            android:id="@+id/button5"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onPararClick"
+            android:text="@string/parar" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <SeekBar
+            android:id="@+id/seekBarVelocity"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center_vertical|center_horizontal|center"
+            android:padding="32dp"
+            android:rotation="270"
+            android:visibility="visible" />
+
+    </LinearLayout>
+    <SeekBar
+        android:id="@+id/seekBarTurn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp" />
+
+</RelativeLayout>

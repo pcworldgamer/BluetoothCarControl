@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">BluetoothCarControl</string>
+    <string name="ligar">On</string>
+    <string name="procurar">Search</string>
+    <string name="abrir">Connect</string>
+    <string name="frente">Foward</string>
+    <string name="parar">Stop</string>
+    <string name="esquerda">Left</string>
+    <string name="direita">Right</string>
+    <string name="sair">Exit</string>
+    <string name="title_activity_select_device">SelectDevice</string>
+</resources>
